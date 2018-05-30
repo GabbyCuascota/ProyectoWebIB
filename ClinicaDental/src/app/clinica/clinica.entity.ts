@@ -16,8 +16,8 @@ export class ClinicaEntity {
   @Column()
   telefonoClinica: number;
 
-  @Column()
-  direccionClinica: number;
+  @Column({length: 50})
+  direccionClinica: string;
 
   @OneToMany(
     type => CitasEntity,
