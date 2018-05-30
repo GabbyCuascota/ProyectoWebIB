@@ -1,4 +1,4 @@
-/*import * as Joi from 'joi';
+import * as Joi from 'joi';
 
 export const DOCTOR_SCHEMA = Joi
   .object()
@@ -30,4 +30,3 @@ export const DOCTOR_SCHEMA = Joi
       .greater(0)
       .less(150),
   });
-*/

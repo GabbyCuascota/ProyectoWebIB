@@ -1,4 +1,4 @@
-/*import * as Joi from 'joi';
+import * as Joi from 'joi';
 
 export const HISTORIALES_SCHEMA = Joi
   .object()
@@ -16,4 +16,4 @@ export const HISTORIALES_SCHEMA = Joi
       .greater(0)
       .less(150),
   });
-*/
+

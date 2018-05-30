@@ -1,4 +1,4 @@
-/*import * as Joi from 'joi';
+import * as Joi from 'joi';
 
 export const CITA_SCHEMA = Joi
   .object()
@@ -17,4 +17,4 @@ export const CITA_SCHEMA = Joi
       .max(30)
       .required(),
   });
-  */
+

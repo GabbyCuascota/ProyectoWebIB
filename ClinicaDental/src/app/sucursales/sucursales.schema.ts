@@ -1,4 +1,4 @@
-/*import * as Joi from 'joi';
+import * as Joi from 'joi';
 
 export const LOGIN_SCHEMA = Joi
   .object()
@@ -17,4 +17,4 @@ export const LOGIN_SCHEMA = Joi
       .max(30)
       .required(),
   });
-*/
+

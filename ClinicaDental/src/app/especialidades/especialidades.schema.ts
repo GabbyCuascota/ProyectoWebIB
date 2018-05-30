@@ -1,4 +1,4 @@
-/*import * as Joi from 'joi';
+import * as Joi from 'joi';
 
 export const ESPECIALIDADES_SCHEMA = Joi
   .object()
@@ -31,4 +31,4 @@ export const ESPECIALIDADES_SCHEMA = Joi
       .max(30)
       .required(),
   });
-*/
+
