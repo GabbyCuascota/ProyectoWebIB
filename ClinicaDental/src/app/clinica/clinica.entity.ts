@@ -1,4 +1,4 @@
-import {Column, Entity, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, JoinColumn, OneToMany, PrimaryGeneratedColumn} from "typeorm";
 import {CitasEntity} from "../citasMedicas/citas.entity";
 import {HistorialesEntity} from "../historiales/historiales.entity";
 import {PacienteEntity} from "../paciente/paciente.entity";

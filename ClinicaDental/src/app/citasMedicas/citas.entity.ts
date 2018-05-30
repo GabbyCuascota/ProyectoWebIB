@@ -1,4 +1,4 @@
-import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, JoinColumn, JoinTable, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
 import {ClinicaEntity} from "../clinica/clinica.entity";
 import {HistorialesEntity} from "../historiales/historiales.entity";
 
@@ -22,4 +22,5 @@ export  class CitasEntity{
     type => HistorialesEntity,
     historialesEntity => historialesEntity.citas)
   historiales: HistorialesEntity[];
+
 }
