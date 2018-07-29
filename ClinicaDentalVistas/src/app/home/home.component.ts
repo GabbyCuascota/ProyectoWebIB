@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
   clickSucursales: SucursalesComponent;
   mostrarComponente = false;
 
@@ -31,4 +30,5 @@ export class HomeComponent implements OnInit {
       return 0;
     }
   }
+
 }

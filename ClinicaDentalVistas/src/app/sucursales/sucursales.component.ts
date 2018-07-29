@@ -15,6 +15,25 @@ export class SucursalesComponent implements OnInit {
   ngOnInit() {
   }
 
+  clickSucursales: SucursalesComponent;
+  mostrarComponente = false;
+
+  cargarSucursales(evento) {
+    console.log('evento', evento);
+    this.mostrarComponente = true;
+    if (this.clickSucursales.dioClick.emit(1)) {
+      this.mostrarComponente = true;
+      console.log(this.clickSucursales);
+      return 1;
+
+    } else {
+      this.mostrarComponente = false;
+      console.log(this.clickSucursales);
+      return 0;
+    }
+  }
+
+
   /* clickVisitar() {
      this.dioClick.emit(1);
    }*/

@@ -1,10 +1,27 @@
-<br>
-<br>
-<br>
-<br>
+<div class="row">
+  <div class="col-sm-12">
+    <br>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-3">
+    <img
+      src="https://scontent.fuio2-1.fna.fbcdn.net/v/t1.0-9/36890864_2023880064348768_1598154453213511680_n.jpg?_nc_cat=0&oh=efc672e16401378675b9da0a6a121afe&oe=5BE47A76"
+      alt="fotoperfil"
+      class="imagen-perfil" width="50" height="50"> Gabriela Cuascota
+  </div>
+</div>
 <div class="row">
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
+    <br>
     <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
@@ -13,7 +30,8 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="http://www.codigosanluis.com/wp-content/uploads/2018/02/dentista.jpg"
+          <img class="d-block w-100"
+               src="http://www.pqs.pe/sites/default/files/styles/852x479/public/2016/08/actualidad/odonto.jpg?itok=hV4Txrer"
                alt="First slide">
         </div>
         <div class="carousel-item">
@@ -41,7 +59,7 @@
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-      <h1 class="sucursales font-weight-bold font-italic">SUCURSAL CUMBAYÁ</h1>
+      <h1 class="sucursales font-weight-bold font-italic text-center bg-info text-white">SUCURSAL CUMBAYÁ</h1>
     </div>
     <div class="col-sm-2"></div>
   </div>
@@ -50,7 +68,7 @@
 <div class="row">
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
-    <p class="opciones">Escoja la especialidad:</p>
+    <p class="opciones font-italic">Escoja la especialidad:</p>
   </div>
   <div class="col-sm-2">
   </div>
@@ -60,7 +78,10 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Cirugía Oral y Maxilofacial</button>
+      <a [routerLink]="['/sc-cirugia']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Cirugía Oral y Maxilofacial
+        </button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -70,7 +91,9 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Endodoncia</button>
+      <a [routerLink]="['/sc-endodoncia']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Endodoncia</button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -80,7 +103,9 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Odontopediatría</button>
+      <a [routerLink]="['/sc-odontopediatria']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Odontopediatría</button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -90,7 +115,9 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Ortodoncia</button>
+      <a [routerLink]="['/sc-ortodoncia']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Ortodoncia</button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -100,7 +127,9 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Periodoncia</button>
+      <a [routerLink]="['/sc-periodoncia']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Periodoncia</button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -110,7 +139,9 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Rehabilitación Oral</button>
+      <a [routerLink]="['/sc-rehabilitacion']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Rehabilitación Oral</button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -120,10 +151,23 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-8">
     <div class="fondo2">
-      <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Consulta Médica</button>
+      <a [routerLink]="['/sc-consulta']">
+        <button type="button" class="btn btn-secondary btn-lg btn-block font-italic">Consulta Médica</button>
+      </a>
     </div>
   </div>
   <div class="col-sm-2"></div>
+</div>
+<div class="row">
+  <div class="col-sm-5"></div>
+  <div class="col-sm-7">
+    <br>
+    <br>
+    <a [routerLink]="['/sucursales']">
+      <button type="button" class="btn btn-info font-weight-bold">Volver
+      </button>
+    </a>
+  </div>
 </div>
 <br>
 <br>
@@ -134,7 +178,7 @@
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-      <p class="nombre font-weight-light font-italic">Dental Studio</p>
+      <p class="nombre font-weight-bold font-italic text-center bg-info text-white">Dental Studio</p>
     </div>
     <div class="col-sm-2"></div>
   </div>

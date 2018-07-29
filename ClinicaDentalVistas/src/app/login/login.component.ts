@@ -7,7 +7,6 @@ import {Router} from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
   constructor(private _router: Router) {
   }
 
@@ -31,6 +30,8 @@ export class LoginComponent implements OnInit {
       alert('Los passwords no son iguales');
       this.password = undefined;
       this.passwordConfirmation = undefined;
+
     }
+
   }
 }
