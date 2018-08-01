@@ -1,19 +1,19 @@
-<body>
-<calendario #dp [(ngModel)]="model" (navigate)="date = $event.next"></calendario>
-<hr/>
-<button class="btn btn-sm btn-outline-primary mr-2" (click)="selectToday()">Select Today</button>
-<button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo()">To current month</button>
-<button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo({year: 2013, month: 2})">To Feb 2013
-</button>
-<hr/>
-<pre>Month: {{ date.month }}.{{ date.year }}</pre>
-<pre>Model: {{ model | json }}</pre>
-
-<ngb-calendario [(ngModel)]="time" [meridian]="meridian"></ngb-calendario>
-<button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
-  Meridian - {{meridian ? "ON" : "OFF"}}
-</button>
-<hr>
-<pre>Selected time: {{time | json}}</pre>
-</body>
-
+<div class="container">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-10">
+    <div class="input-group date" data-provide="datepicker">
+      <input type="text" class="form-control">
+      <div class="input-group-addon">
+        <span class="glyhicon glyhicon-th"></span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.datepicker').datepicker({
+      format: 'dd/mm/yyyy',
+      language: "pt-BR",
+      startDate: '+0d'
+    });
+  </script>
+  <div class="col-sm-2"></div>
+</div>
