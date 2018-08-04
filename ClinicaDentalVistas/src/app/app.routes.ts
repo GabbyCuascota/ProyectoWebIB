@@ -1,27 +1,37 @@
 import {Routes} from "@angular/router";
-import {LoginComponent} from "./login/login.component";
-import {HomeComponent} from "./home/home.component";
-import {SucursalBatanComponent} from "./sucursal-batan/sucursal-batan.component";
-import {SucursalCumbayaComponent} from "./sucursal-cumbaya/sucursal-cumbaya.component";
-import {UsuariosComponent} from "./usuarios/usuarios.component";
-import {RegistrarseComponent} from "./registrarse/registrarse.component";
-import {SucursalesComponent} from "./sucursales/sucursales.component";
-import {SbCirugiaComponent} from "./sb-cirugia/sb-cirugia.component";
-import {ConfirmarComponent} from "./confirmar/confirmar.component";
-import {MensajeComponent} from "./mensaje/mensaje.component";
-import {ScCirugiaComponent} from "./sc-cirugia/sc-cirugia.component";
-import {ScEndodonciaComponent} from "./sc-endodoncia/sc-endodoncia.component";
-import {SbEndodonciaComponent} from "./sb-endodoncia/sb-endodoncia.component";
-import {SbOdontopediatriaComponent} from "./sb-odontopediatria/sb-odontopediatria.component";
-import {SbOrtodonciaComponent} from "./sb-ortodoncia/sb-ortodoncia.component";
-import {SbPeriodonciaComponent} from "./sb-periodoncia/sb-periodoncia.component";
-import {SbRehabilitacionComponent} from "./sb-rehabilitacion/sb-rehabilitacion.component";
-import {SbConsultaComponent} from "./sb-consulta/sb-consulta.component";
-import {ScOdontopediatriaComponent} from "./sc-odontopediatria/sc-odontopediatria.component";
-import {ScOrtodonciaComponent} from "./sc-ortodoncia/sc-ortodoncia.component";
-import {ScRehabilitacionComponent} from "./sc-rehabilitacion/sc-rehabilitacion.component";
-import {ScPeriodonciaComponent} from "./sc-periodoncia/sc-periodoncia.component";
-import {ScConsultaComponent} from "./sc-consulta/sc-consulta.component";
+import {LoginComponent} from "./Componentes/login/login.component";
+import {HomeComponent} from "./Componentes/home/home.component";
+import {SucursalBatanComponent} from "./Componentes/SucursalesClinica/sucursal-batan/sucursal-batan.component";
+import {SucursalCumbayaComponent} from "./Componentes/SucursalesClinica/sucursal-cumbaya/sucursal-cumbaya.component";
+import {UsuariosComponent} from "./Componentes/usuarios/usuarios.component";
+import {RegistrarseComponent} from "./Componentes/registrarse/registrarse.component";
+import {SucursalesComponent} from "./Componentes/SucursalesClinica/sucursales/sucursales.component";
+import {SbCirugiaComponent} from "./Componentes/Citas/sb-cirugia/sb-cirugia.component";
+import {ConfirmarComponent} from "./Componentes/Citas/confirmar/confirmar.component";
+import {MensajeComponent} from "./Componentes/Citas/mensaje/mensaje.component";
+import {ScCirugiaComponent} from "./Componentes/Citas/sc-cirugia/sc-cirugia.component";
+import {ScEndodonciaComponent} from "./Componentes/Citas/sc-endodoncia/sc-endodoncia.component";
+import {SbEndodonciaComponent} from "./Componentes/Citas/sb-endodoncia/sb-endodoncia.component";
+import {SbOdontopediatriaComponent} from "./Componentes/Citas/sb-odontopediatria/sb-odontopediatria.component";
+import {SbOrtodonciaComponent} from "./Componentes/Citas/sb-ortodoncia/sb-ortodoncia.component";
+import {SbPeriodonciaComponent} from "./Componentes/Citas/sb-periodoncia/sb-periodoncia.component";
+import {SbRehabilitacionComponent} from "./Componentes/Citas/sb-rehabilitacion/sb-rehabilitacion.component";
+import {SbConsultaComponent} from "./Componentes/Citas/sb-consulta/sb-consulta.component";
+import {ScOdontopediatriaComponent} from "./Componentes/Citas/sc-odontopediatria/sc-odontopediatria.component";
+import {ScOrtodonciaComponent} from "./Componentes/Citas/sc-ortodoncia/sc-ortodoncia.component";
+import {ScRehabilitacionComponent} from "./Componentes/Citas/sc-rehabilitacion/sc-rehabilitacion.component";
+import {ScPeriodonciaComponent} from "./Componentes/Citas/sc-periodoncia/sc-periodoncia.component";
+import {ScConsultaComponent} from "./Componentes/Citas/sc-consulta/sc-consulta.component";
+import {OpcionesComponent} from "./Componentes/opciones/opciones.component";
+import {PacienteComponent} from "./Componentes/PacientesOpciones/paciente/paciente.component";
+import {PacientesAntiguosComponent} from "./Componentes/PacientesOpciones/pacientes-antiguos/pacientes-antiguos.component";
+import {PacientesNuevosComponent} from "./Componentes/PacientesOpciones/pacientes-nuevos/pacientes-nuevos.component";
+import {DoctoresComponent} from "./Componentes/DoctoresOpciones/doctores/doctores.component";
+import {DoctoresAntiguosComponent} from "./Componentes/DoctoresOpciones/doctores-antiguos/doctores-antiguos.component";
+import {DoctoresNuevosComponent} from "./Componentes/DoctoresOpciones/doctores-nuevos/doctores-nuevos.component";
+import {FichaClinicaComponent} from "./Componentes/PacientesOpciones/ficha-clinica/ficha-clinica.component";
+import {SbVisualizarCitasComponent} from "./Componentes/Citas/sb-visualizar-citas/sb-visualizar-citas.component";
+import {ScVisualizarCitasComponent} from "./Componentes/Citas/sc-visualizar-citas/sc-visualizar-citas.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -35,6 +45,38 @@ export const RUTAS_APP: Routes = [
   {
     path: 'registrarse',
     component: RegistrarseComponent,
+  },
+  {
+    path: 'opciones',
+    component: OpcionesComponent,
+  },
+  {
+    path: 'paciente',
+    component: PacienteComponent,
+  },
+  {
+    path: 'pacientes-antiguos',
+    component: PacientesAntiguosComponent,
+  },
+  {
+    path: 'pacientes-nuevos',
+    component: PacientesNuevosComponent,
+  },
+  {
+    path: 'ficha-clinica',
+    component: FichaClinicaComponent,
+  },
+  {
+    path: 'doctores',
+    component: DoctoresComponent,
+  },
+  {
+    path: 'doctores-antiguos',
+    component: DoctoresAntiguosComponent,
+  },
+  {
+    path: 'doctores-nuevos',
+    component: DoctoresNuevosComponent,
   },
   {
     path: 'sucursales',
@@ -73,6 +115,10 @@ export const RUTAS_APP: Routes = [
     component: SbConsultaComponent,
   },
   {
+    path: 'sb-visualizar-citas',
+    component: SbVisualizarCitasComponent,
+  },
+  {
     path: 'sucursal-cumbaya',
     component: SucursalCumbayaComponent,
   },
@@ -103,6 +149,10 @@ export const RUTAS_APP: Routes = [
   {
     path: 'sc-consulta',
     component: ScConsultaComponent,
+  },
+  {
+    path: 'sc-visualizar-citas',
+    component: ScVisualizarCitasComponent,
   },
   {
     path: 'confirmar',
