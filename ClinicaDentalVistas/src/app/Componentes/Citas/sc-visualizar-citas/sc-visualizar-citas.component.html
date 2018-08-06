@@ -1,3 +1,46 @@
-<p>
-  sc-visualizar-citas works!
-</p>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Desarrollo Hidrocálido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <style type="text/css">
+    body {
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<!--INICIO -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well well-sm">
+        <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend class="text-center">Agenda de Citas</legend>
+            <div class='input-group date' id='divMiCalendario'>
+              <input type='text' id="txtFecha" class="form-control" readonly/>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--FIN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.es.js"></script>
+<script type="text/javascript">
+  $('#divMiCalendario').datetimepicker({
+    format: 'YYYY-MM-DD HH:mm'
+  });
+  $('#divMiCalendario').data("DateTimePicker").show();
+</script>
+</body>
+</html>
