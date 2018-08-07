@@ -10,7 +10,7 @@ export class UsuarioService {
         {
             'id': 1,
             'nombre': 'Gabriela',
-            'contrasena': 'Admin',
+            'contrasena': 'gabriela10',
             'urlImg': 'https://scontent.fuio2-1.fna.fbcdn.net/v/t1.0-9/36890864_2023880064348768_1598154453213511680_n.jpg?_nc_cat=0&oh=efc672e16401378675b9da0a6a121afe&oe=5BE47A76'
         },
         {

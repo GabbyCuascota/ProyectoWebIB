@@ -8,7 +8,7 @@ export class LoginEntity {
     @PrimaryGeneratedColumn()
     idLogin: number;
 
-    @Column()
+    @Column({length: 30})
     contrasena: string;
 
     @Column({length: 50})

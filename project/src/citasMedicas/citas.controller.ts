@@ -1,11 +1,12 @@
-import {Body, Controller, Get, Param, Post, Put, Req, Res} from "@nestjs/common";
-import {CitasEntity} from "../../dist/citasMedicas/citas.entity";
-
+import {Controller, Get, Param, Post, Req, Res} from "@nestjs/common";
+import {CitasEntity} from "./citas.entity";
+import {CitasService} from "./citas.service";
 
 @Controller('Cita')
 export class CitasController {
 
-    constructor(private _citasService: CitasEntity) {}
+    constructor(private _citasService: CitasEntity) {
+    }
 
     @Get()
     async listarTodos(
@@ -39,6 +40,4 @@ export class CitasController {
         const citas = this._citasService.crearCitas();
         return citas;
     }
-
-
 }

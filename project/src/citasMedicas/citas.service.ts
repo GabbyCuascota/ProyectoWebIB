@@ -2,7 +2,7 @@ import {Injectable} from "@nestjs/common";
 import {InjectRepository} from "@nestjs/typeorm";
 import {Like, Repository} from "typeorm";
 import {UsuarioEntity} from "../Usuario/usuario.entity";
-import {CitasEntity} from "../../../ClinicaDental/src/app/citasMedicas/citas.entity";
+import {CitasEntity} from "./citas.entity";
 
 
 @Injectable()
@@ -50,6 +50,4 @@ export class CitasService {
     async traerCitasPorUsuario(usuarioID): Promise<CitasEntity[]> {
         return await this.citasRepository.find({where: {usuarioId: usuarioID}});
     }
-
-
 }

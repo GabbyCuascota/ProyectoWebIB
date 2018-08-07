@@ -7,12 +7,13 @@ import {UsuarioEntity} from "./Usuario/usuario.entity";
 import {UsuarioController} from "./Usuario/usuario.controller";
 import {UsuarioService} from "./Usuario/usuario.service";
 import {CitasEntity} from "./citasMedicas/citas.entity";
-import {ClinicaEntity} from "../dist/clinica/clinica.entity";
-import {DoctoresEntity} from "../dist/project/src/doctores/doctores.entity";
-import {EspecialidadesEntity} from "../dist/project/src/especialidades/especialidades.entity";
-import {HistorialesEntity} from "../../ClinicaDental/src/app/historiales/historiales.entity";
-import {PacienteEntity} from "../../ClinicaDental/src/app/paciente/paciente.entity";
-import {SucursalesEntity} from "../../ClinicaDental/src/app/sucursales/sucursales.entity";
+import {LoginEntity} from "./login/login.entity";
+import {ClinicaEntity} from "./clinica/clinica.entity";
+import {DoctoresEntity} from "./doctores/doctores.entity";
+import {EspecialidadesEntity} from "./especialidades/especialidades.entity";
+import {HistorialesEntity} from "./historiales/historiales.entity";
+import {PacienteEntity} from "./paciente/paciente.entity";
+import {SucursalesEntity} from "./sucursales/sucursales.entity";
 
 @Module({
     imports: [
@@ -27,19 +28,23 @@ import {SucursalesEntity} from "../../ClinicaDental/src/app/sucursales/sucursale
             synchronize: true,
             //ssl: true,
         }),
-        TypeOrmModule.forFeature([CitasEntity, ClinicaEntity, DoctoresEntity, EspecialidadesEntity,
-            HistorialesEntity, PacienteEntity, SucursalesEntity, UsuarioEntity])
+        TypeOrmModule.forFeature([
+            CitasEntity,
+            ClinicaEntity,
+            DoctoresEntity,
+            EspecialidadesEntity,
+            HistorialesEntity,
+            PacienteEntity,
+            SucursalesEntity,
+            UsuarioEntity,
+            LoginEntity])
     ],
     controllers: [
         AppController,
-        // EquipoController,
-        //JugadorController,
         AutorizacionController,
         UsuarioController],
     providers: [
         AppService,
-        //EquipoService,
-        //JugadorService,
         UsuarioService
     ],
 })

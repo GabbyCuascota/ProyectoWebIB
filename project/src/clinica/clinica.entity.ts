@@ -14,7 +14,7 @@ export class ClinicaEntity {
   idClinica: number;
 
   @Column()
-  telefonoClinica: number;
+  telefonoClinica: string;
 
   @Column({length: 50})
   direccionClinica: string;

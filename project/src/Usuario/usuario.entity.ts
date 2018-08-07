@@ -16,11 +16,6 @@ export class UsuarioEntity {
     @Column({length: 2000})
     urlImg: string;
 
-    /* @OneToMany(
-         type => EquipoEntity,
-         comida => comida.usuarioId)
-     equipos: EquipoEntity [];
- */
     @OneToMany(
         type => CitasEntity,
         citasEntity => citasEntity.usuarioId)
