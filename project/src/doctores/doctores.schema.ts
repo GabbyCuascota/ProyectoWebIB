@@ -29,4 +29,10 @@ export const DOCTOR_SCHEMA = Joi
       .integer()
       .greater(0)
       .less(150),
+
+      celularDoctor: Joi
+          .number()
+          .integer()
+          .greater(0)
+          .less(150),
   });

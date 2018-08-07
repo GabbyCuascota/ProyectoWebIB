@@ -1,6 +1,5 @@
 import {Controller, Get, Param, Post, Req, Res} from "@nestjs/common";
 import {CitasEntity} from "./citas.entity";
-import {CitasService} from "./citas.service";
 
 @Controller('Cita')
 export class CitasController {
@@ -13,31 +12,22 @@ export class CitasController {
         @Res() response,
         @Req() request,
     ) {
-        const citas = await this._citasService.traerTodos();
-        return response.send(citas);
+        /*const citas = await this._citasService.traerTodosCitas();
+        return response.send(citas);*/
     }
 
-    @Get('/:paramBusqueda')
-    async buscar(
+    @Get('por/id/:idCitas')
+    async obtenerCitasPorId(
         @Param() paramParams,
         @Res() response
     ) {
-        const usuarios = await this._citasService.buscar(paramParams.paramBusqueda);
-        return response.send(usuarios);
-    }
-
-    @Get('/porUsuario/:idUsuario')
-    async obtenerCitaPorUsuario(
-        @Param() paramParams,
-        @Res() response
-    ) {
-        const usuarios = await this._citasService.traerCitasPorUsuario(paramParams.idUsuario);
-        return response.send(usuarios);
+        /* const cita = await this._citasService.traerCitasPorId(paramParams.idCita);
+         return response.send(cita);*/
     }
 
     @Post()
-    async crearCitaBase() {
-        const citas = this._citasService.crearCitas();
-        return citas;
+    async crearCitasBase() {
+        /* const citas = this._citasService.crearCitas();
+         return citas;*/
     }
 }

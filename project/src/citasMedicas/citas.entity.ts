@@ -1,7 +1,8 @@
 import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
-import {ClinicaEntity} from "../clinica/clinica.entity";
-import {HistorialesEntity} from "../historiales/historiales.entity";
 import {UsuarioEntity} from "../Usuario/usuario.entity";
+import {HistorialesEntity} from "../historiales/historiales.entity";
+import {ClinicaEntity} from "../clinica/clinica.entity";
+
 
 @Entity('web_proyecto_citas')
 export class CitasEntity {

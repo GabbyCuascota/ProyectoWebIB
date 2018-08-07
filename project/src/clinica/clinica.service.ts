@@ -35,20 +35,11 @@ export class ClinicaService {
         return this.clinicaRepository.find();
     }
 
-    async traerTodos(): Promise<ClinicaEntity[]> {
+    async traerTodosClinicas(): Promise<ClinicaEntity[]> {
         return await this.clinicaRepository.find();
     }
 
-    async obtenerClinicaPorNombre(nombreArgumento) {
-        return await this.clinicaRepository.createQueryBuilder("clinica").where("clinica.nombre = :nombre", {nombre: nombreArgumento}).getOne();
-    }
-
-    async buscar(parametroBusqueda) {
-
-        //  return await this.clinicaRepository.find({nombre: Like("%" + parametroBusqueda + "%")});
-    }
-
-    async obtenerUsuarioPorId(idUsuario) {
-        return await this.clinicaRepository.find({where: {id: idUsuario}})
+    async obtenerClinicaPorId(idClinica) {
+        return await this.clinicaRepository.find({where: {id: idClinica}})
     }
 }

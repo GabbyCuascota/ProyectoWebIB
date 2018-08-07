@@ -1,7 +1,6 @@
 import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
 import {ClinicaEntity} from "../clinica/clinica.entity";
 
-
 @Entity('web_proyecto_especialidades')
 export class EspecialidadesEntity {
     @PrimaryGeneratedColumn()
