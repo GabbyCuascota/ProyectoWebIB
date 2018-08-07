@@ -9,10 +9,10 @@ export class LoginEntity {
     idLogin: number;
 
     @Column({length: 30})
-    contrasena: string;
+    contrasenia: string;
 
     @Column({length: 50})
-    usuario: string;
+    username: string;
 
     @OneToMany(
         type => PacienteEntity,

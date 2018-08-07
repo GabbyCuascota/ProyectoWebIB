@@ -19,6 +19,7 @@ import {EspecialidadesController} from "./especialidades/especialidades.controll
 import {ClinicaService} from "./clinica/clinica.service";
 import {DoctoresService} from "./doctores/doctores.service";
 import {EspecialidadesService} from "./especialidades/especialidades.service";
+import {JwtService} from "./json-web-token/jwt.service";
 
 @Module({
     imports: [
@@ -56,7 +57,8 @@ import {EspecialidadesService} from "./especialidades/especialidades.service";
         UsuarioService,
         ClinicaService,
         DoctoresService,
-        EspecialidadesService
+        EspecialidadesService,
+        JwtService
     ],
 })
 
