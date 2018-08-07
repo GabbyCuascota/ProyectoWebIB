@@ -13,8 +13,7 @@ export class ClinicaService {
             'direccionClinica': 'El Batan, Eloy Alfaro y Portugal',
         },
         {
-            'id': 2,
-            'idClinica': 1,
+            'idClinica': 2,
             'telefonoClinica': '2445637',
             'direccionClinica': 'Cumbaya. Universidad San Francisco',
         }

@@ -12,8 +12,13 @@ import {ClinicaEntity} from "./clinica/clinica.entity";
 import {DoctoresEntity} from "./doctores/doctores.entity";
 import {EspecialidadesEntity} from "./especialidades/especialidades.entity";
 import {HistorialesEntity} from "./historiales/historiales.entity";
-import {PacienteEntity} from "./paciente/paciente.entity";
 import {SucursalesEntity} from "./sucursales/sucursales.entity";
+import {ClinicaController} from "./clinica/clinica.controller";
+import {DoctoresController} from "./doctores/doctores.controller";
+import {EspecialidadesController} from "./especialidades/especialidades.controller";
+import {ClinicaService} from "./clinica/clinica.service";
+import {DoctoresService} from "./doctores/doctores.service";
+import {EspecialidadesService} from "./especialidades/especialidades.service";
 
 @Module({
     imports: [
@@ -34,7 +39,6 @@ import {SucursalesEntity} from "./sucursales/sucursales.entity";
             DoctoresEntity,
             EspecialidadesEntity,
             HistorialesEntity,
-            PacienteEntity,
             SucursalesEntity,
             UsuarioEntity,
             LoginEntity])
@@ -42,10 +46,17 @@ import {SucursalesEntity} from "./sucursales/sucursales.entity";
     controllers: [
         AppController,
         AutorizacionController,
-        UsuarioController],
+        UsuarioController,
+        ClinicaController,
+        DoctoresController,
+        EspecialidadesController
+    ],
     providers: [
         AppService,
-        UsuarioService
+        UsuarioService,
+        ClinicaService,
+        DoctoresService,
+        EspecialidadesService
     ],
 })
 
